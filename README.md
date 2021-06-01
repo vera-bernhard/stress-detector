@@ -1,4 +1,4 @@
-# Lexical Stress Detection for English words
+# Lexical Stress Detection for isolated English words
 
 Author: Vera Bernhard
 
@@ -17,11 +17,11 @@ Date: 01.06.21
 
 ## 1. Some Functionalities of `StressDetector`
 
-- 3 `.wav` files are provided in `/wav_tg_all`. To test on the entire dataset, copy all .wav files from the Switch Drive into the folder `/wav_tg_all`
+- 3 `.wav` files are provided in `/wav_tg_all`. To test on the entire dataset, copy all .wav files from the Switch Drive into the folder `/wav_tg_all`.
 
-- The following commands need to run within directory `.../stress-detector`.
+- The following commands need to be run within directory `/stress-detector`.
 
-- Adapt the Prosogram path in `scripts/praat/run_prosogram.praat` matching your environment
+- Adapt the Prosogram path in `scripts/praat/run_prosogram.praat` matching your environment.
 
 ### Load pretrained model and classify
 
@@ -50,7 +50,7 @@ sd.classify('test/bamboo2.wav', 'bamboo', feedback=True)
 
 - Files created by WEBMAUS or PROSOGRAM are all saved within `wav_path`
 
-#### Variant 1: Webmaus and Prosogram needs to by run, only .wav given
+#### Variant 1: Webmaus and Prosogram needs to be run, only .wav given
 
 ```python
 from stress_detector import StressDetector, FEATURES
@@ -62,7 +62,7 @@ sd.preprocess(par_path)
 
 ```
 
-#### Variant 2: Only, Prosogram needs to be run , .wav & .TextGrid given
+#### Variant 2: Only Prosogram needs to be run , .wav & .TextGrid given
 
 ```python
 from stress_detector import StressDetector, FEATURES
@@ -73,7 +73,7 @@ sd.preprocess()
 
 ```
 
-### Calculate Features of Preprocessed Data
+### Calculate Features of preprocessed data
 
 Features have not been calculated yet but .TextGrid and Prosogram output are given
 
@@ -116,3 +116,7 @@ print('F1 Score: {}'.format(np.mean(evaluation['f1'])))
 ## 2. Finding the best classifier
 
 The process of finding the best classifier is documented in `find_model.py`
+
+The final Voting Classifier trained in this thesis and the corresponding scaler are saved in `models\`:
+* `classifier_vot_210601.pkl`
+* `scaler_vot_210601.pkl`
