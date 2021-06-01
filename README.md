@@ -53,12 +53,12 @@ sd.classify('test/bamboo2.wav', 'bamboo', feedback=True)
 #### Variant 1: Webmaus and Prosogram needs to by run, only .wav given
 
 ```python
-    from stress_detector import StressDetector, FEATURES
+from stress_detector import StressDetector, FEATURES
 
-    wav_path = './wav_tg_all'
-    par_path = './photrans'
-    sd = StressDetector(wav_path, FEATURES)
-    sd.preprocess(par_path)
+wav_path = './wav_tg_all'
+par_path = './photrans'
+sd = StressDetector(wav_path, FEATURES)
+sd.preprocess(par_path)
 
 ```
 
