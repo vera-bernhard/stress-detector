@@ -1,0 +1,118 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 2.367166
+tiers? <exists> 
+size = 5
+item []:
+    item [1]:
+        class = "IntervalTier"
+        name = "ORT-MAU"
+        xmin = 0
+        xmax = 2.367166
+        intervals: size = 3
+        intervals [1]:
+            xmin = 0.000000
+            xmax = 0.860000
+            text = ""
+        intervals [2]:
+            xmin = 0.860000
+            xmax = 1.400000
+            text = "bamboo"
+        intervals [3]:
+            xmin = 1.400000
+            xmax = 2.367166
+            text = ""
+    item [2]:
+        class = "IntervalTier"
+        name = "KAN-MAU"
+        xmin = 0
+        xmax = 2.367166
+        intervals: size = 3
+        intervals [1]:
+            xmin = 0.000000
+            xmax = 0.860000
+            text = ""
+        intervals [2]:
+            xmin = 0.860000
+            xmax = 1.400000
+            text = "b{mbu:"
+        intervals [3]:
+            xmin = 1.400000
+            xmax = 2.367166
+            text = ""
+    item [3]:
+        class = "IntervalTier"
+        name = "KAS-MAU"
+        xmin = 0
+        xmax = 2.367166
+        intervals: size = 3
+        intervals [1]:
+            xmin = 0.000000
+            xmax = 0.860000
+            text = ""
+        intervals [2]:
+            xmin = 0.860000
+            xmax = 1.400000
+            text = "b { m . b u:"
+        intervals [3]:
+            xmin = 1.400000
+            xmax = 2.367166
+            text = ""
+    item [4]:
+        class = "IntervalTier"
+        name = "segm"
+        xmin = 0
+        xmax = 2.367166
+        intervals: size = 7
+        intervals [1]:
+            xmin = 0.000000
+            xmax = 0.860000
+            text = "<p:>"
+        intervals [2]:
+            xmin = 0.860000
+            xmax = 0.910000
+            text = "b"
+        intervals [3]:
+            xmin = 0.910000
+            xmax = 1.090000
+            text = "{"
+        intervals [4]:
+            xmin = 1.090000
+            xmax = 1.200000
+            text = "m"
+        intervals [5]:
+            xmin = 1.200000
+            xmax = 1.240000
+            text = "b"
+        intervals [6]:
+            xmin = 1.240000
+            xmax = 1.400000
+            text = "u:"
+        intervals [7]:
+            xmin = 1.400000
+            xmax = 2.367166
+            text = "<p:>"
+    item [5]:
+        class = "IntervalTier"
+        name = "syll"
+        xmin = 0
+        xmax = 2.367166
+        intervals: size = 4
+        intervals [1]:
+            xmin = 0.000000
+            xmax = 0.860000
+            text = "<p:>"
+        intervals [2]:
+            xmin = 0.860000
+            xmax = 1.200000
+            text = "b { m"
+        intervals [3]:
+            xmin = 1.200000
+            xmax = 1.400000
+            text = "b u:"
+        intervals [4]:
+            xmin = 1.400000
+            xmax = 2.367166
+            text = "<p:>"

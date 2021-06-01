@@ -42,7 +42,7 @@ sd.classify('test/bamboo2.wav', 'bamboo', feedback=True)
 
 ### Preprocess all data
 
-- Creates syllable alignment by using WEBMAUS, runs prosogram on all data
+- Creates syllable alignment by using WEBMAUS, runs PROSOGRAM on all data
 
 - `wav_path`: directory containing all .wav files, named in form S1_LOC_2_1_alarm_1.wav
 
@@ -62,7 +62,7 @@ sd.classify('test/bamboo2.wav', 'bamboo', feedback=True)
 
 ```
 
-#### Variant 2: Only, Prosogram needs to by run , .wav & .TextGrid given
+#### Variant 2: Only, Prosogram needs to be run , .wav & .TextGrid given
 
 ```python
 from stress_detector import StressDetector, FEATURES

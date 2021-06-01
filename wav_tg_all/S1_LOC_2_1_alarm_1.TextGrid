@@ -1,0 +1,98 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 0.587619
+tiers? <exists> 
+size = 5
+item []:
+    item [1]:
+        class = "IntervalTier"
+        name = "ORT-MAU"
+        xmin = 0
+        xmax = 0.587619
+        intervals: size = 2
+        intervals [1]:
+            xmin = 0.000000
+            xmax = 0.050000
+            text = ""
+        intervals [2]:
+            xmin = 0.050000
+            xmax = 0.587619
+            text = "alarm"
+    item [2]:
+        class = "IntervalTier"
+        name = "KAN-MAU"
+        xmin = 0
+        xmax = 0.587619
+        intervals: size = 2
+        intervals [1]:
+            xmin = 0.000000
+            xmax = 0.050000
+            text = ""
+        intervals [2]:
+            xmin = 0.050000
+            xmax = 0.587619
+            text = "VlQRm"
+    item [3]:
+        class = "IntervalTier"
+        name = "KAS-MAU"
+        xmin = 0
+        xmax = 0.587619
+        intervals: size = 2
+        intervals [1]:
+            xmin = 0.000000
+            xmax = 0.050000
+            text = ""
+        intervals [2]:
+            xmin = 0.050000
+            xmax = 0.587619
+            text = "V . l Q R m"
+    item [4]:
+        class = "IntervalTier"
+        name = "segm"
+        xmin = 0
+        xmax = 0.587619
+        intervals: size = 6
+        intervals [1]:
+            xmin = 0.000000
+            xmax = 0.050000
+            text = "<p:>"
+        intervals [2]:
+            xmin = 0.050000
+            xmax = 0.090000
+            text = "V"
+        intervals [3]:
+            xmin = 0.090000
+            xmax = 0.240000
+            text = "l"
+        intervals [4]:
+            xmin = 0.240000
+            xmax = 0.410000
+            text = "Q"
+        intervals [5]:
+            xmin = 0.410000
+            xmax = 0.470000
+            text = "R"
+        intervals [6]:
+            xmin = 0.470000
+            xmax = 0.587619
+            text = "m"
+    item [5]:
+        class = "IntervalTier"
+        name = "syll"
+        xmin = 0
+        xmax = 0.587619
+        intervals: size = 3
+        intervals [1]:
+            xmin = 0.000000
+            xmax = 0.050000
+            text = "<p:>"
+        intervals [2]:
+            xmin = 0.050000
+            xmax = 0.090000
+            text = "V"
+        intervals [3]:
+            xmin = 0.090000
+            xmax = 0.587619
+            text = "l Q R m"

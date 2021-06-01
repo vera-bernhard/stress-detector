@@ -1,0 +1,12 @@
+File type = "ooTextFile"
+Object class = "PitchTier"
+
+xmin = 0 
+xmax = 0.5876190476190476 
+points: size = 2 
+points [1]:
+    number = 0.24130952380952378 
+    value = 208.73652684055253 
+points [2]:
+    number = 0.4013095238095239 
+    value = 208.73652684055253 
