@@ -1,15 +1,6 @@
 
-# This script uses the automatic estimation of min and max f0 proposed by Daniel Hirst
-# Hirst, Daniel. (2007). A Praat plugin for Momel and INTSINT with improved algorithms for modelling and coding intonation. Proceedings of the 16th International Congress of Phonetic Sciences.
-# https://www.researchgate.net/publication/228640428_A_Praat_plugin_for_Momel_and_INTSINT_with_improved_algorithms_for_modelling_and_coding_intonation
-#
-# Pitch ceiling raised from q3*1.5 to q3*2.5 to allow for expressive speech, as described at:
-# "Hirst, Daniel. (2011). The analysis by synthesis of speech melody: from data to models"
-# https://www.researchgate.net/publication/228409777_The_analysis_by_synthesis_of_speech_melody_from_data_to_models
-
-# http://www.praatvocaltoolkit.com/
-
-# Adaptiation from Schwab and Corretge
+# Adaptiation from Schwab and Corretge (http://www.praatvocaltoolkit.com/) 
+# based on Hirst (2007)
 
 form Input directory name
     comment Enter directory where soundfile lives:

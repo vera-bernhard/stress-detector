@@ -16,7 +16,7 @@ from typing import Tuple
 import pandas as pd
 
 
-# Class to process an isolated word:
+# Class to process a recording of an isolated word:
 # - Detects syllable within a words
 # - Extracts duration, pitch, loudness and spectral features per syllabe
 

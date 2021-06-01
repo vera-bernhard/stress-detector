@@ -32,6 +32,10 @@ FEATURES = [
     'f0_max_styl_left', 'f0_max_styl_right', 'f0_meanST_left', 'f0_meanST_right'
 ]
 
+# Class to:
+# - extract prosodic features on all recordings single words within a directory
+# - train and evaluate sklearn classifiers on the resulted data
+# - classify a single recording with trained classifier
 
 class StressDetector:
 
