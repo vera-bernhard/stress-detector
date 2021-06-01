@@ -15,7 +15,7 @@ Date: 01.06.21
 - Python specific requirements can be found in:
   `requirements.py`
 
-## 1. Functionalities of `StressDetector`
+## 1. Some Functionalities of `StressDetector`
 
 - 3 `.wav` files are provided in `/wav_tg_all`. To test on the entire dataset, copy all .wav files from the Switch Drive into the folder `/wav_tg_all`
 
