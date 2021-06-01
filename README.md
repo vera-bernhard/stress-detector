@@ -73,7 +73,7 @@ sd.preprocess()
 
 ```
 
-### Calculate Features of preprocessed data
+### Calculate features of preprocessed data
 
 Features have not been calculated yet but .TextGrid and Prosogram output are given
 
