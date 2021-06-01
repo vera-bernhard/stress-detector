@@ -19,7 +19,7 @@ Date: 01.06.21
 
 - 3 `.wav` files are provided in `/wav_tg_all`. To test on the entire dataset, copy all .wav files from the Switch Drive into the folder `/wav_tg_all`
 
-- The following commands need to run within directory `.../stress_detector`.
+- The following commands need to run within directory `.../stress-detector`.
 
 - Adapt the Prosogram path in `scripts/praat/run_prosogram.praat` matching your environment
 
@@ -98,7 +98,7 @@ sd.get_features('./data/complete_features_subset.tsv')
 print(sd.agree_syllable_nr())
 ```
 
-### Train and evaluate a classifier on all data
+### Evaluate a classifier on all data
 
 ```python
 from stress_detector import StressDetector, FEATURES
