@@ -13,7 +13,7 @@ Date: 01.06.21
 - Python >= 3.8
 
 - Python specific requirements can be found in:
-  `requirements.py`
+  `requirements.txt`
 
 ## 1. Some Functionalities of `StressDetector`
 
