@@ -13,6 +13,8 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
+import numpy as np
+
 from stress_detector import StressDetector
 from stress_detector import FEATURES
 
@@ -72,7 +74,7 @@ par_path = './photrans'
 
 
 def preprocess():
-    """1. Preprocess + get features"""
+    """1. Preprocess and calculate features"""
     sd = StressDetector(wav_path, ALL_FEATURES)
     # Entire preprocess pipeline
     # ----------------------------------------
@@ -90,7 +92,7 @@ def preprocess():
 
 
 def get_best_classifiers():
-    """2. Check which 4 algorithms perform best"""
+    """2. Check which 4 algorithms perform best, with and without post-processing"""
     sd = StressDetector(wav_path, ALL_FEATURES)
     sd.get_features('./data/complete_features.tsv')
 
@@ -287,7 +289,7 @@ def select_best_features():
 
 
 def grid_search():
-    """4. Grid search on best performing algorithms and best features"""
+    """4. Grid search on best performing algorithms on two feature sets"""
     pipeline1 = Pipeline([
         ("scaler", StandardScaler()),
         ("nnet", MLPClassifier(
@@ -538,34 +540,37 @@ def train_best_model():
 
     sd = StressDetector(wav_path, abs_cont)
     sd.get_features('./data/complete_features.tsv')
-    sd.train_all(FEATURES, 'vot', save=True)
-    print(sd.train(FEATURES, vot_abs_cont, matrix=True))
+    sd.train_all(vot_abs_cont, 'vot', save=True)
+    evaluation = sd.train(vot_abs_cont, abs_cont, matrix=True)
+    print('F1 Score: {}'.format(np.mean(evaluation['f1'])))
+    print('Accuracy: {}'.format(np.mean(evaluation['accuracy'])))
 
 
 def load_and_classify():
     """ 7. Make some classification with saved model"""
     sd = StressDetector(wav_path, abs_cont)
     sd.get_features('./data/complete_features.tsv')
-    sd.load_classifier('models/classifier_vot_210601.pkl',
-                       'models/scaler_vot_210601.pkl')
-    sd.classify('test/bamboo1.wav', 'bamboo')
-    sd.classify('test/bamboo2.wav', 'bamboo')
+    sd.load_classifier('models/classifier_vot.pkl',
+                       'models/scaler.pkl')
+    sd.classify('test/bamboo1.wav', 'bamboo', feedback=True)
+    sd.classify('test/bamboo2.wav', 'bamboo', feedback=True)
 
 
 def main():
 
-    # 1. Preprocess + get features
-    preprocess()
+    # 1. Preprocess and calculate features
+    # preprocess()
 
-    # 2. Check which 4 algorithms perform best
-    # get_best_classifiers()
+    # 2. Check which 4 algorithms perform best, with and without post-processing
+    get_best_classifiers()
 
     # 3. Select best features/feature groups
     # select_best_features()
 
-    # 4. Grid search on best performing algorithms and best features
-
-    # 5. Retrain models with found hyperparameters for both feature set
+    # 4. Grid search on best performing algorithms using the two feature sets
+    # grid_search()
+    
+    # 5. Retrain models with found hyperparameters for both feature sets
     # retrain_after_gridsearch()
 
     # 6. Train best system on all data and save it
