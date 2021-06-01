@@ -1,3 +1,0 @@
-rowLabel	nucl_t1	nucl_t2	f0_min	f0_max	f0_median	f0_mean	f0_meanST	f0_start	f0_end	lopitch	hipitch	hipitchST	dynamic	intrasyllab	intersyllab	up	down	trajectory	f0_discont	prnp_start	prnp_end	prnp_intra	nucl_dur	syll_dur	vowel_dur	rhyme_dur	gap_left	loudness	int_peak	promL2D_nucldur	hesitation	speaker_id	before_pause	after_pause	pause_dur	onset_dur
-0.936	0.9360827664399093	1.0860827664399075	194	228	203	206	92.29	203	203	203	203	91.99	0	0	0	0	0	0	0	50	50	0	0.14999999999999825	0.34	0	0	0.9361	0	71.2	0	0	1	0	1	0	0
-1.241	1.2410827664399091	1.3060827664399077	180	210	191	194	91.2	191	191	191	191	91.02	0	0	-0.97	0	0	0	0	30	30	0	0.06499999999999861	0.2	0	0	0.155	0	64.7	0	0	1	1	0	1.061	0
