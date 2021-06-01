@@ -20,7 +20,7 @@ from stress_detector import FEATURES
 
 # This file describes the steps of finding the best model
 
-# uncomment a steps in the main() function below, to reproduce results of thesis
+# uncomment a step in the main() function below, to reproduce results of thesis
 
 
 ALL_FEATURES = [
