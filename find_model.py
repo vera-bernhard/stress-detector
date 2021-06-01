@@ -546,7 +546,8 @@ def load_and_classify():
     """ 7. Make some classification with saved model"""
     sd = StressDetector(wav_path, abs_cont)
     sd.get_features('./data/complete_features.tsv')
-    sd.load_classifier('models/classifier_vot.pkl', 'models/scaler.pkl')
+    sd.load_classifier('models/classifier_vot_210601.pkl',
+                       'models/scaler_vot_210601.pkl')
     sd.classify('test/bamboo1.wav', 'bamboo')
     sd.classify('test/bamboo2.wav', 'bamboo')
 
